@@ -5,12 +5,18 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { NewsComponent } from './news/news.component';
+import { ChatbotComponent } from './chatbot/chatbot.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    DashboardComponent,
+    NewsComponent,
+    ChatbotComponent
   ],
   imports: [
     BrowserModule,
