@@ -1,0 +1,24 @@
+.example-container {
+  width: 100vw;
+  height: 100vh;
+  /*border: 1px solid rgba(0, 0, 0, 0.5);*/
+}
+
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+  min-width: 300px;
+}
+
+#sidebar_toggle_button:hover{
+  outline: 0 !important;
+  outline-offset: 0  !important;
+  background-image: none  !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none  !important;
+}

@@ -1,14 +1,7 @@
-<ul class="nav">
-  <li class="nav-item">
-    <a class="nav-link active" href="#">Active</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#">Disabled</a>
-  </li>
-</ul>
+<mat-list>
+  <!--<h3 mat-subheader>Folders</h3>-->
+  <mat-list-item *ngFor="let navItem of navItems">
+    <i mat-list-icon class={{navItem.icon}} aria-hidden="true"></i>
+    <p mat-line>{{navItem.name}}</p>
+  </mat-list-item>
+</mat-list>
