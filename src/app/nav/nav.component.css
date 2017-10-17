@@ -1,0 +1,22 @@
+.nav-component{
+  color: white !important;
+}
+
+.nav-component .list-group{
+  margin-top: 56px;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+.nav-component .list-group .list-group-item{
+  color: lightgrey !important;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  text-transform: capitalize;
+}
+
+.nav-component .list-group .list-group-item i{
+  padding-right: 15px;
+}

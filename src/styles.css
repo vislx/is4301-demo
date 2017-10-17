@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import "assets/font-awesome-4.7.0/css/font-awesome.css";
+@font-face {
+  font-family: Roboto;
+  src: url(assets/roboto-font/Roboto-Light.ttf);
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.bg-theme{
+  background-color: #2a825c !important;
+}
