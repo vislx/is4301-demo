@@ -1,10 +1,5 @@
-<p>dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!</p>
-<p>dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!</p>
-<p>dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!</p>
-<p>dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!</p>
-<p>dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!</p>
-<p>dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!</p>
-<p>dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!</p>
-<p>dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!</p>
-<p>dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!</p>
-<p>dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!dashboard works!</p>
+<div class="row mt-5">
+  <div class="col" *ngFor="let card of cards">
+    <app-db-indicator-card [name]="card.name" [value]="card.value" [icon]="card.icon"></app-db-indicator-card>
+  </div>
+</div>

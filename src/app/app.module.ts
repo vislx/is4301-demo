@@ -8,6 +8,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NewsComponent } from './news/news.component';
 import { ChatbotComponent } from './chatbot/chatbot.component';
+import { DbIndicatorCardComponent } from './db-indicator-card/db-indicator-card.component';
 
 const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
@@ -19,7 +20,6 @@ const appRoutes: Routes = [
   }
 ];
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +27,8 @@ const appRoutes: Routes = [
     ToolbarComponent,
     DashboardComponent,
     NewsComponent,
-    ChatbotComponent
+    ChatbotComponent,
+    DbIndicatorCardComponent
   ],
   imports: [
     BrowserModule,
