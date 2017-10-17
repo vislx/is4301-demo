@@ -9,6 +9,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { NewsComponent } from './news/news.component';
 import { ChatbotComponent } from './chatbot/chatbot.component';
 import { DbIndicatorCardComponent } from './db-indicator-card/db-indicator-card.component';
+import { DbLineChartComponent } from './db-line-chart/db-line-chart.component';
+
+import { ChartsModule } from 'ng2-charts';
 
 const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
@@ -28,11 +31,13 @@ const appRoutes: Routes = [
     DashboardComponent,
     NewsComponent,
     ChatbotComponent,
-    DbIndicatorCardComponent
+    DbIndicatorCardComponent,
+    DbLineChartComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes, { enableTracing: true }) // enableTracing <-- debugging purposes only
+    RouterModule.forRoot(appRoutes, { enableTracing: true }), // enableTracing <-- debugging purposes only
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

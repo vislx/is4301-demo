@@ -1,0 +1,18 @@
+<div class="card dashboard-card">
+  <div class="card-header">
+    Portfolio
+  </div>
+  <div class="card-body">
+    <div style="display: block">
+      <canvas baseChart
+              [datasets]="chartData"
+              [labels]="chartLabels"
+              [options]="chartOptions"
+              [legend]="chartLegend"
+              [chartType]="'line'"
+              (chartHover)="chartHovered($event)"
+              (chartClick)="chartClicked($event)"></canvas>
+    </div>
+
+  </div>
+</div>
