@@ -9,6 +9,17 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { NewsComponent } from './news/news.component';
 import { ChatbotComponent } from './chatbot/chatbot.component';
 
+const appRoutes: Routes = [
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'news', component: NewsComponent },
+  { path: 'chat', component: ChatbotComponent },
+  { path: '',
+    redirectTo: '/dashboard',
+    pathMatch: 'full'
+  }
+];
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +31,7 @@ import { ChatbotComponent } from './chatbot/chatbot.component';
   ],
   imports: [
     BrowserModule,
-    RouterModule
+    RouterModule.forRoot(appRoutes, { enableTracing: true }) // enableTracing <-- debugging purposes only
   ],
   providers: [],
   bootstrap: [AppComponent]
