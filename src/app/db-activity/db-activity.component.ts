@@ -6,9 +6,10 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./db-activity.component.css']
 })
 export class DbActivityComponent implements OnInit {
-  @Input() message: string;
-  @Input() postTime: any;
-  @Input() hasStar: boolean;
+  @Input() message = 'There is no message for this activity.';
+  @Input() postTime: any = '5 min ago';
+  @Input() isImportant = false;
+  @Input() isLast = false;
 
   constructor() { }
 
