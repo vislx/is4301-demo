@@ -3,15 +3,18 @@
     Portfolio
   </div>
   <div class="card-body">
-    <div style="display: block">
+    <div style="display: block;">
       <canvas baseChart
               [datasets]="chartData"
               [labels]="chartLabels"
               [options]="chartOptions"
+              [colors]="chartColors"
               [legend]="chartLegend"
               [chartType]="'line'"
               (chartHover)="chartHovered($event)"
-              (chartClick)="chartClicked($event)"></canvas>
+              (chartClick)="chartClicked($event)"
+              height="72"
+      ></canvas>
     </div>
 
   </div>
