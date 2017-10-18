@@ -2,14 +2,16 @@
   <div class="card-header">
     Market Trends
   </div>
-  <div class="card-body">
+  <div class="card-body" style="height: 285px;">
     <div style="display: block;">
       <canvas baseChart
               [datasets]="chartData"
               [labels]="chartLabels"
               [options]="chartOptions"
+              [colors]="chartColors"
               [legend]="chartLegend"
               [chartType]="'line'"
+              height="250"
       ></canvas>
     </div>
   </div>

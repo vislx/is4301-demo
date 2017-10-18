@@ -21,15 +21,22 @@ export class DbMarketTrendsComponent implements OnInit {
       }]
     }
   };
-  // public chartColors: [any] = [
-  //   { // grey
-  //     backgroundColor: 'rgba(156, 219, 243, 0.2)',
-  //     borderColor: 'rgba(156, 219, 243, 1)',
-  //     pointBackgroundColor: 'rgba(156, 219, 243, 1)',
-  //     pointBorderColor: '#fff',
-  //     pointHoverBackgroundColor: '#fff',
-  //     pointHoverBorderColor: 'rgba(156, 219, 243, 0.8)'
-  //   }];
+  public chartColors: [any] = [
+    { // blue
+      backgroundColor: 'rgba(156, 219, 243, 0.2)',
+      borderColor: 'rgba(156, 219, 243, 1)',
+      pointBackgroundColor: 'rgba(156, 219, 243, 1)',
+      pointBorderColor: '#fff',
+      pointHoverBackgroundColor: '#fff',
+      pointHoverBorderColor: 'rgba(156, 219, 243, 0.8)'
+    }, { // grey
+      backgroundColor: 'rgba(237, 235, 234, 0.2)',
+      borderColor: 'rgba(237, 235, 234, 1)',
+      pointBackgroundColor: 'rgba(237, 235, 234, 1)',
+      pointBorderColor: '#fff',
+      pointHoverBackgroundColor: '#fff',
+      pointHoverBorderColor: 'rgba(237, 235, 234, 0.8)'
+    }];
   public chartLegend = true;
   public chartLabels: string[] = ['23 Jan', '26 Jan', '27 Jan', '28 Jan', '29 Jan', '30 Jan'];
   public chartData: any[] = [
