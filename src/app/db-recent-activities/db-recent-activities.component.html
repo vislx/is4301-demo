@@ -2,10 +2,18 @@
   <div class="card-header">
     Recent Activities
   </div>
-  <div class="card-body">
-    <p>
-      <app-db-activity
-      ></app-db-activity>
-    </p>
+  <div class="card-body" style="max-height: 285px; overflow-y: scroll;">
+
+    <ul class="list-group">
+      <li class="list-group-item" style="border: none; border-radius: 0;" *ngFor="let activity of activities; last as last">
+        <app-db-activity
+          [message]="activity.message"
+          [postTime]="activity.postTime"
+          [isImportant]="activity.isImportant"
+          [isLast]="last"
+        ></app-db-activity>
+      </li>
+    </ul>
+
   </div>
 </div>

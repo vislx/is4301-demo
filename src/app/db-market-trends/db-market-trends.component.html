@@ -3,8 +3,14 @@
     Market Trends
   </div>
   <div class="card-body">
-    <p>
-      db-market-trends works!
-    </p>
+    <div style="display: block;">
+      <canvas baseChart
+              [datasets]="chartData"
+              [labels]="chartLabels"
+              [options]="chartOptions"
+              [legend]="chartLegend"
+              [chartType]="'line'"
+      ></canvas>
+    </div>
   </div>
 </div>
