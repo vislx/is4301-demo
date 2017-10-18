@@ -14,6 +14,7 @@ import { DbLineChartComponent } from './db-line-chart/db-line-chart.component';
 import { ChartsModule } from 'ng2-charts';
 import { DbMarketTrendsComponent } from './db-market-trends/db-market-trends.component';
 import { DbRecentActivitiesComponent } from './db-recent-activities/db-recent-activities.component';
+import { DbActivityComponent } from './db-activity/db-activity.component';
 
 const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
@@ -36,7 +37,8 @@ const appRoutes: Routes = [
     DbIndicatorCardComponent,
     DbLineChartComponent,
     DbMarketTrendsComponent,
-    DbRecentActivitiesComponent
+    DbRecentActivitiesComponent,
+    DbActivityComponent
   ],
   imports: [
     BrowserModule,
