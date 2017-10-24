@@ -10,7 +10,8 @@ export class ChatMessageComponent implements OnInit {
   @Input() fromName: string;
   @Input() avatar: string;
   @Input() postTime: any;
-
+  @Input() isFromFinbot = false;
+  @Input() isLast = false;
   constructor() { }
 
   ngOnInit() {

@@ -1,3 +1,21 @@
-<p>
-  chat-message works!
-</p>
+<div class="row py-3" [ngClass]="isLast ? '':'row-border-bottom' ">
+  <div class="col-md-1 text-center">
+    <img src="{{'./assets/img/' + avatar}}" class="rounded-circle" alt="avatar" height="50px">
+  </div>
+  <div class="col">
+    <div class="row small" style="color: darkgray">
+      <div class="col">
+        <span>{{fromName}}</span>
+      </div>
+      <div class="col text-right" *ngIf="postTime">
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+        <span>{{postTime}}</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p>{{messageText}}</p>
+      </div>
+    </div>
+  </div>
+</div>
