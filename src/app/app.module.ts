@@ -15,11 +15,8 @@ import { ChartsModule } from 'ng2-charts';
 import { DbMarketTrendsComponent } from './db-market-trends/db-market-trends.component';
 import { DbRecentActivitiesComponent } from './db-recent-activities/db-recent-activities.component';
 import { DbActivityComponent } from './db-activity/db-activity.component';
-import { NewsTopLeftComponent } from './news-top-left/news-top-left.component';
-import { NewsTopRightComponent } from './news-top-right/news-top-right.component';
-import { NewsBottomLeftComponent } from './news-bottom-left/news-bottom-left.component';
-import { NewsBottomRightComponent } from './news-bottom-right/news-bottom-right.component';
 import { ChatMessageComponent } from './chat-message/chat-message.component';
+import { NewsCardComponent } from './news-card/news-card.component';
 
 const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
@@ -44,11 +41,8 @@ const appRoutes: Routes = [
     DbMarketTrendsComponent,
     DbRecentActivitiesComponent,
     DbActivityComponent,
-    NewsTopLeftComponent,
-    NewsTopRightComponent,
-    NewsBottomLeftComponent,
-    NewsBottomRightComponent,
-    ChatMessageComponent
+    ChatMessageComponent,
+    NewsCardComponent
   ],
   imports: [
     BrowserModule,
