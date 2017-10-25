@@ -17,6 +17,7 @@ import { DbRecentActivitiesComponent } from './db-recent-activities/db-recent-ac
 import { DbActivityComponent } from './db-activity/db-activity.component';
 import { ChatMessageComponent } from './chat-message/chat-message.component';
 import { NewsCardComponent } from './news-card/news-card.component';
+import { ChatInputboxComponent } from './chat-inputbox/chat-inputbox.component';
 
 const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
@@ -42,7 +43,8 @@ const appRoutes: Routes = [
     DbRecentActivitiesComponent,
     DbActivityComponent,
     ChatMessageComponent,
-    NewsCardComponent
+    NewsCardComponent,
+    ChatInputboxComponent
   ],
   imports: [
     BrowserModule,
