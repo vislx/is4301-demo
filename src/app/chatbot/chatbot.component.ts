@@ -16,7 +16,7 @@ export class ChatbotComponent implements OnInit, AfterViewChecked {
       isFromFinbot: true
     }];
   
-  private incomingMessage: string;
+  private isToScroll = false;
 
   constructor() { }
 
@@ -25,16 +25,15 @@ export class ChatbotComponent implements OnInit, AfterViewChecked {
   }
   
   ngAfterViewChecked() {
-    if (this.incomingMessage) {
-      console.log('ngAfterViewChecked');
-      this.incomingMessage = null;
+    if (this.isToScroll) {
+      this.isToScroll = false;
       window.scrollTo(0, document.body.scrollHeight);
     }
   }
   
   onMessageSent (message: string) {
     console.log( 'Message in chat: ' + message);
-    this.incomingMessage = message;
+    this.isToScroll = (message != null);
     this.messages.push({
       messageText: message,
       postTime: moment().format('MMM D, HH:mm:ss'),
