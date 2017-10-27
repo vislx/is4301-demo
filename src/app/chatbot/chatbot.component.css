@@ -1,9 +1,17 @@
 .chatinput-container{
-  background-color: white;
+  background-color: #f3f3f3;
   height: 84px;
-  width: calc(100vw - 320px);
-  margin-left: 300px;
+  width: calc(100vw - 280px);
+  margin-left: 280px;
   padding-left: 40px;
   padding-right: 40px;
-  border-top: 2px lightgrey solid;
+  border-top: 1px lightgrey solid;
+}
+
+.chatmessages-container{
+  height: calc(100vh - 66px - 84px);
+}
+
+.chatmessages-bottom-row {
+  margin-bottom: 84px;
 }

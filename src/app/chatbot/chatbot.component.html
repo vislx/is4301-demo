@@ -1,7 +1,7 @@
-<div class="container-fluid mt-5" style="height: calc(100vh - 150px);">
+<div class="container-fluid mt-5 chatmessages-container">
   <div class="row my-3 text-center">
     <div class="col">
-      <span>Load previous</span>
+      <span class="small">Load previous</span>
     </div>
   </div>
   <div class="row my-3" *ngFor="let message of messages; last as last">
@@ -17,7 +17,7 @@
       ></app-chat-message>
     </div>
   </div>
-  <div class="row" style="margin-bottom: 84px;"></div>
+  <div class="row chatmessages-bottom-row"></div>
 </div>
 <div class="container-fluid fixed-bottom chatinput-container">
   <div class="row">
