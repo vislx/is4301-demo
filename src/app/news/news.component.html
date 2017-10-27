@@ -1,30 +1,27 @@
-<div style="overflow-x: hidden; width: inherit;">
-  <div class="container">
-    <div class="row mt-3">
-      <div class="col-md-6 mt-3">
-        <i class="fa fa-plus"></i> Add Subscribe
-      </div>
-      <div class="col-md-6 mt-3 text-right">
-        <i class="fa fa-refresh mr-2"></i><small>Your news feeds last updated at <strong>{{currentTime | date:"medium"}}</strong></small>
-      </div>
-      <div class="col-md-12 mt-3">
-        <ul class="list-group">
-          <li class="list-group-item my-2" style="border: none; border-radius: 0; padding: 0;" *ngFor="let newsCard of newsCards; last as last">
-            <app-news-card
-              [img]="newsCard.img"
-              [title]="newsCard.title"
-              [content]="newsCard.content"
-              [postTime]="newsCard.postTime"
-              [source]="newsCard.source"
-              [relatedInvestments]="newsCard.relatedInvestments"
-            ></app-news-card>
-          </li>
-        </ul>
-      </div>
-      <div class="col-md-12 text-center">
-        <span style="color: darkgray">loading more...</span>
-      </div>
+<div class="container" style="padding-bottom: 20px;">
+  <div class="row mt-3">
+    <div class="col-md-6 mt-3">
+      <i class="fa fa-plus"></i> Add Subscribe
+    </div>
+    <div class="col-md-6 mt-3 text-right">
+      <i class="fa fa-refresh mr-2"></i><small>Your news feeds last updated at <strong>{{currentTime | date:"medium"}}</strong></small>
+    </div>
+    <div class="col-md-12 mt-3">
+      <ul class="list-group">
+        <li class="list-group-item my-2" style="border: none; border-radius: 0; padding: 0;" *ngFor="let newsCard of newsCards; last as last">
+          <app-news-card
+            [img]="newsCard.img"
+            [title]="newsCard.title"
+            [content]="newsCard.content"
+            [postTime]="newsCard.postTime"
+            [source]="newsCard.source"
+            [relatedInvestments]="newsCard.relatedInvestments"
+          ></app-news-card>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-12 text-center">
+      <span style="color: darkgray">loading more...</span>
     </div>
   </div>
-
 </div>
