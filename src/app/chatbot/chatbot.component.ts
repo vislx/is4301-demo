@@ -14,14 +14,18 @@ export class ChatbotComponent implements OnInit, AfterViewChecked {
       Hi, I\'m the Finbot for customer care. What can I help you today?<br/>
       <div class="small" style="line-height: 50%">
         You may ask quote for market data, like:
-        <strong>stock price</strong> (e.g. "What's GOOG's price today?"),
+        <strong>stock price</strong> (e.g. "What's Google's stock price today?"),
         <strong>foreign exchange</strong> (e.g. "What's USD to SGD today?"),
         <strong>exchange index</strong> (e.g. "What's the SP500 index today?"),
-        <strong>or indicators</strong> (e.g. "How is US inflation rate changed?").
-      </div><br/>
-      <!--<div class="small" style="line-height: 50%">-->
-        <!--You can ask about your portfolio, like:<br>-->
-      <!--</div>-->
+        or <strong>indicators</strong> (e.g. "How is US inflation rate changed?").
+      </div>
+      <div class="small mt-1" style="line-height: 50%">
+        You can ask about your portfolio, like:
+        <strong>portfolio performance</strong> (e.g. "How is my portfolio performance?"),
+        <strong>portfolio assets</strong> (e.g. "How is my portfolio assets?"),
+        <strong>portfolio top-gainer</strong> (e.g. "What's my portfolio top-gainer?"),
+        <strong>portfolio top-loser</strong> (e.g. "What's my portfolio top-loser?"),
+      </div>
       `,
       postTime: moment().format('MMM D, HH:mm:ss'),
       avatar: 'avatar-finbot.png',
