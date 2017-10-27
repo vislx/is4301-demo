@@ -1,0 +1,25 @@
+{
+  "USD_to_SGD": {
+    "price": 1.36856,
+    "last": 1.367,
+    "change": 0.00150,
+    "pct": 0.10973
+  },
+  "CNY_to_SGD": {
+    "price": 0.20569,
+    "last": 0.206,
+    "change": -0.0003,
+    "pct": -0.15
+  },
+  "SP500_Index": {
+    "price": 4997.83,
+    "last": 4972.60,
+    "change": 25.40,
+    "pct": 0.51
+  },
+  "US_inflation": {
+    "price": 0.014,
+    "last": 0.014,
+    "exp": 0.015
+  }
+}

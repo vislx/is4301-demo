@@ -14,7 +14,8 @@
     </div>
     <div class="row" style="padding-left: 10px;">
       <div class="col">
-        <p>{{messageText}}</p>
+        <div [innerHTML]="messageText" *ngIf="isFromFinbot"></div>
+        <div *ngIf="!isFromFinbot">{{messageText}}</div>
       </div>
     </div>
   </div>
