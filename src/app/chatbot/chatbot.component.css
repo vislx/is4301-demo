@@ -1,0 +1,9 @@
+.chatinput-container{
+  background-color: white;
+  height: 84px;
+  width: calc(100vw - 320px);
+  margin-left: 300px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-top: 2px lightgrey solid;
+}

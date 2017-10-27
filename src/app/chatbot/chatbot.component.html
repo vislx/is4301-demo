@@ -1,4 +1,4 @@
-<div class="container mt-5">
+<div class="container-fluid mt-5" style="height: calc(100vh - 150px);">
   <div class="row my-3 text-center">
     <div class="col">
       <span>Load previous</span>
@@ -17,12 +17,13 @@
       ></app-chat-message>
     </div>
   </div>
-  <!--<div class="fixed-bottom" style="width: calc(100vw - 300px); margin-left: 280px;">-->
-    <!--<div class="row my-3">-->
-      <!--<div class="col-md-1"></div>-->
-      <!--<div class="col-md-10">-->
-        <!--<app-chat-inputbox></app-chat-inputbox>-->
-      <!--</div>-->
-    <!--</div>-->
-  <!--</div>-->
+  <div class="row" style="margin-bottom: 84px;"></div>
+</div>
+<div class="container-fluid fixed-bottom chatinput-container">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <app-chat-inputbox></app-chat-inputbox>
+    </div>
+  </div>
 </div>
