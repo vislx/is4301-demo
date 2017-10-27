@@ -24,7 +24,7 @@ export class ChatInputboxComponent implements OnInit {
     this.message = this.messageForm.get('messageBody').value;
     this.messageForm.reset();
     // console.log('Message: ' + this.message);
-    this.onMessageSent.emit(this.message);
+    if (this.message) { this.onMessageSent.emit(this.message); }
   }
   
 

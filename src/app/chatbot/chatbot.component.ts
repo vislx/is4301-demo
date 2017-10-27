@@ -1,56 +1,47 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewChecked} from '@angular/core';
+
+declare var moment: any;
 
 @Component({
   selector: 'app-chatbot',
   templateUrl: './chatbot.component.html',
   styleUrls: ['./chatbot.component.css']
 })
-export class ChatbotComponent implements OnInit {
-  public messages: [any] = [
-    {
+export class ChatbotComponent implements OnInit, AfterViewChecked {
+  public messages: [any] = [{
       messageText: 'Hi, I\'m the Finbot for customer care. What can I help you today?',
-      postTime: '',
+      postTime: moment().format('MMM D, HH:mm:ss'),
       avatar: 'avatar-finbot.png',
       fromName: 'Finbot',
       isFromFinbot: true
-    }, {
-      messageText: 'Where is the nearest investment branch?',
-      postTime: 'Apr 3, 05:40',
-      avatar: 'avatar.png',
-      fromName: 'Brian Harris'
-    }, {
-      messageText: 'There is one branch near to you: \n United Square Branch',
-      postTime: 'Apr 3, 05:41',
-      avatar: 'avatar-finbot.png',
-      fromName: 'Finbot',
-      isFromFinbot: true
-    }, {
-      messageText: 'Hi, I\'m the Finbot for customer care. What can I help you today?',
-      postTime: '',
-      avatar: 'avatar-finbot.png',
-      fromName: 'Finbot',
-      isFromFinbot: true
-    }, {
-      messageText: 'Where is the nearest investment branch?',
-      postTime: 'Apr 3, 05:40',
-      avatar: 'avatar.png',
-      fromName: 'Brian Harris'
-    }, {
-      messageText: 'There is one branch near to you: \n United Square Branch',
-      postTime: 'Apr 3, 05:41',
-      avatar: 'avatar-finbot.png',
-      fromName: 'Finbot',
-      isFromFinbot: true
-    }
-  ];
+    }];
+  
+  private incomingMessage: string;
 
   constructor() { }
 
   ngOnInit() {
+    document.body.scrollTop = document.body.scrollHeight;
+  }
+  
+  ngAfterViewChecked() {
+    if (this.incomingMessage) {
+      console.log('ngAfterViewChecked');
+      this.incomingMessage = null;
+      window.scrollTo(0, document.body.scrollHeight);
+    }
   }
   
   onMessageSent (message: string) {
-      console.log('Message in chat: ' + message);
+    console.log( 'Message in chat: ' + message);
+    this.incomingMessage = message;
+    this.messages.push({
+      messageText: message,
+      postTime: moment().format('MMM D, HH:mm:ss'),
+      avatar: 'avatar.png',
+      fromName: 'Brian Harris'
+    });
+    
   }
 
 }
