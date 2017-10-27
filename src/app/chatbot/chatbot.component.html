@@ -23,7 +23,7 @@
   <div class="row">
     <div class="col-md-1"></div>
     <div class="col-md-10">
-      <app-chat-inputbox></app-chat-inputbox>
+      <app-chat-inputbox (onMessageSent)="onMessageSent($event)"></app-chat-inputbox>
     </div>
   </div>
 </div>

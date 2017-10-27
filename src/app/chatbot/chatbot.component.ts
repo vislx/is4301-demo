@@ -48,5 +48,9 @@ export class ChatbotComponent implements OnInit {
 
   ngOnInit() {
   }
+  
+  onMessageSent (message: string) {
+      console.log('Message in chat: ' + message);
+  }
 
 }

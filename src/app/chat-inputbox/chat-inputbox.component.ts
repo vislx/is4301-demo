@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter} from '@angular/core';
+import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-chat-inputbox',
@@ -6,10 +7,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./chat-inputbox.component.css']
 })
 export class ChatInputboxComponent implements OnInit {
+  public message: string;
+  @Output() onMessageSent = new EventEmitter<string>();
+  public messageForm: FormGroup;
 
-  constructor() { }
+  constructor(private fb: FormBuilder) {
+    this.messageForm = this.fb.group({
+      'messageBody': ['', Validators.required]
+    });
+  }
 
   ngOnInit() {
   }
+  
+  sendChat() {
+    this.message = this.messageForm.get('messageBody').value;
+    this.messageForm.reset();
+    // console.log('Message: ' + this.message);
+    this.onMessageSent.emit(this.message);
+  }
+  
 
 }

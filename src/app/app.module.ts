@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -50,7 +51,7 @@ const appRoutes: Routes = [
     NewsCardAssetComponent
   ],
   imports: [
-    BrowserModule, HttpClientModule,
+    BrowserModule, HttpClientModule, ReactiveFormsModule,
     RouterModule.forRoot(appRoutes, { enableTracing: true }), // enableTracing <-- debugging purposes only
     ChartsModule
   ],
