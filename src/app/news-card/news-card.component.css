@@ -1,0 +1,20 @@
+.card-img{
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+
+  height: 200px;
+  width: auto;
+  /*padding-right: calc(40px - 50%);*/
+  margin-left: calc(40px - 50%);
+}
+
+.card-img-container{
+  overflow: hidden;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+.card-text{
+  color: darkgray;
+  line-height: 120%;
+}

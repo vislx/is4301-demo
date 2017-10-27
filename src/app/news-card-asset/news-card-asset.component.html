@@ -1,0 +1,10 @@
+<span class="pr-2">
+  <strong>{{assetName}}</strong>
+  <i class="fa fa-long-arrow-up" *ngIf="influence >= 1" style="color: green"></i>
+  <i class="fa fa-long-arrow-up" *ngIf="influence >= 2" style="color: green"></i>
+  <i class="fa fa-long-arrow-up"  *ngIf="influence >= 3" style="color: green"></i>
+  <i class="fa fa-long-arrow-down" *ngIf="influence <= -1"   style="color: darkred"></i>
+  <i class="fa fa-long-arrow-down" *ngIf="influence <= -2"   style="color: darkred"></i>
+  <i class="fa fa-long-arrow-down" *ngIf="influence <= -3"   style="color: darkred"></i>
+  <i class="fa fa-minus" *ngIf="influence == 0"   style="color: goldenrod"></i>
+</span>

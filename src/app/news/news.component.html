@@ -2,6 +2,19 @@
   <div class="container-fluid">
     <div class="row">
 
+      <ul class="list-group">
+        <li class="list-group-item" style="border: none; border-radius: 0;" *ngFor="let newsCard of newsCards; last as last">
+          <app-news-card
+            [img]="newsCard.img"
+            [title]="newsCard.title"
+            [content]="newsCard.content"
+            [postTime]="newsCard.postTime"
+            [source]="newsCard.source"
+            [relatedInvestments]="newsCard.relatedInvestments"
+          ></app-news-card>
+        </li>
+      </ul>
+
     </div>
   </div>
 
