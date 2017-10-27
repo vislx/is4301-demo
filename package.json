@@ -25,6 +25,7 @@
     "chart.js": "^2.7.0",
     "core-js": "^2.4.1",
     "jquery": "^3.2.1",
+    "jquery.ellipsis": "git+https://github.com/STAR-ZERO/jquery-ellipsis.git",
     "ng2-charts": "^1.6.0",
     "popper.js": "^1.11.0",
     "rxjs": "^5.1.0",
