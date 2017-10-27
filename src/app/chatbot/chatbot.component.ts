@@ -1,4 +1,5 @@
 import { Component, OnInit, AfterViewChecked} from '@angular/core';
+import { ChatResponseService } from '../chat-response.service';
 
 declare var moment: any;
 
@@ -18,7 +19,7 @@ export class ChatbotComponent implements OnInit, AfterViewChecked {
   
   private isToScroll = false;
 
-  constructor() { }
+  constructor(private crs: ChatResponseService) { }
 
   ngOnInit() {
     document.body.scrollTop = document.body.scrollHeight;
@@ -40,6 +41,18 @@ export class ChatbotComponent implements OnInit, AfterViewChecked {
       avatar: 'avatar.png',
       fromName: 'Brian Harris'
     });
+    
+    
+    this.crs.getResponse(message).then(reply => {
+      this.isToScroll = (message != null);
+      this.messages.push({
+        messageText: reply,
+        postTime: moment().format('MMM D, HH:mm:ss'),
+        avatar: 'avatar-finbot.png',
+        fromName: 'Finbot'
+      });
+    });
+    
     
   }
 
