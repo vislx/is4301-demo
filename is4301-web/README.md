@@ -1,8 +1,4 @@
 # IS4301 Web Demo Project
-This is the Web Demo Project for **Team Coconut Tree**.
-
-This project is for module IS4301.
-
 Due to copyright issues, the text for news and images are not pushed to Github. The section "News" may not work.
 
 ### Run Project in Development Mode
