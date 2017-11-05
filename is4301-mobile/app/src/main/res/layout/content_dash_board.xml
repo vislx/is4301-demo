@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="zhixuan.zhang.is4301.DashBoardActivity"
+    tools:showIn="@layout/app_bar_dash_board">
+
+    <RelativeLayout
+        android:id="@+id/dashboard_r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#B4CBB5">
+
+        <View
+            android:id="@+id/dashboard_search_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/search" />
+
+        <EditText
+            android:id="@+id/dashboard_search_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toLeftOf="@+id/dashboard_search_icon"
+            android:backgroundTint="#FFF"
+            android:hint="Search"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/dashboard_r2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dashboard_r1"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="1dp" />
+
+        <RelativeLayout
+            android:id="@+id/dashboard_r2_1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/bashboard_border">
+
+            <View
+                android:id="@+id/dashboard_expense_icon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/expense" />
+
+            <TextView
+                android:id="@+id/dashboard_expense_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/dashboard_expense_icon"
+                android:text="$16,500"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dashboard_expense_text_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dashboard_expense_text_1"
+                android:layout_toRightOf="@id/dashboard_expense_icon"
+                android:text="Total Expense"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="1dp" />
+
+        <RelativeLayout
+            android:id="@+id/dashboard_r2_2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/bashboard_border">
+
+            <View
+                android:id="@+id/dashboard_revenue_icon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/revenue" />
+
+            <TextView
+                android:id="@+id/dashboard_revenue_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/dashboard_revenue_icon"
+                android:text="$22,700"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dashboard_revenue_text_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dashboard_revenue_text_1"
+                android:layout_toRightOf="@id/dashboard_revenue_icon"
+                android:text="Total Revenue"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="1dp" />
+
+        <RelativeLayout
+            android:id="@+id/dashboard_r2_3"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/bashboard_border">
+
+            <View
+                android:id="@+id/dashboard_balance_icon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/balance" />
+
+            <TextView
+                android:id="@+id/dashboard_balance_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/dashboard_balance_icon"
+                android:text="$66,400"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dashboard_balance_text_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dashboard_balance_text_1"
+                android:layout_toRightOf="@id/dashboard_balance_icon"
+                android:text="Total Balance"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="1dp" />
+    </LinearLayout>
+
+    <com.jjoe64.graphview.helper.GraphViewXML
+        android:id="@+id/dashboard_graph"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/dashboard_r2"
+        android:layout_marginTop="30dp"
+        android:title="Market Trend"
+        app:seriesColor="#8CCBE9"
+        app:seriesData="2000=4000;2100=5000;2200=3000;2300=7000;2400=4000;2500=5000;2600=3000;2700=10000;2800=5000;2900=3000"
+        app:seriesTitle="USA"
+        app:seriesType="line" />
+
+    <RelativeLayout
+        android:id="@+id/dashboard_r3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/dashboard_graph"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="RECENT ACTIVITY"
+            android:textSize="40px"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/dashboard_r4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dashboard_r3"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/dashboard_r4_1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <View
+                android:id="@+id/dashboard_r4_1_icon_1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/line" />
+
+            <TextView
+                android:id="@+id/dashboard_r4_1_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@id/dashboard_r4_1_icon_1"
+                android:text="Your deposit has updated to: Paid $1,950" />
+
+            <TextView
+                android:id="@+id/dashboard_r4_1_text_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dashboard_r4_1_text_1"
+                android:layout_toRightOf="@id/dashboard_r4_1_icon_1"
+                android:text="34 minutes ago"
+                android:textColor="@color/colorAccent"
+                android:textSize="10sp" />
+
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/star" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent" />
+
+        <RelativeLayout
+            android:id="@+id/dashboard_r4_2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <View
+                android:id="@+id/dashboard_r4_2_icon_1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/line" />
+
+            <TextView
+                android:id="@+id/dashboard_r4_2_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@id/dashboard_r4_2_icon_1"
+                android:text="Your withdraw of $5,000 has been proceed" />
+
+            <TextView
+                android:id="@+id/dashboard_r4_2_text_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dashboard_r4_2_text_1"
+                android:layout_toRightOf="@id/dashboard_r4_2_icon_1"
+                android:text="1 day ago"
+                android:textColor="@color/colorAccent"
+                android:textSize="10sp" />
+
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/star2" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent" />
+
+        <RelativeLayout
+            android:id="@+id/dashboard_r4_3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <View
+                android:id="@+id/dashboard_r4_3_icon_1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/line" />
+
+            <TextView
+                android:id="@+id/dashboard_r4_3_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@id/dashboard_r4_3_icon_1"
+                android:text="You sold 10 Stocks of 1,000 shares - AAPL" />
+
+            <TextView
+                android:id="@+id/dashboard_r4_3_text_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dashboard_r4_3_text_1"
+                android:layout_toRightOf="@id/dashboard_r4_3_icon_1"
+                android:text="4 days ago"
+                android:textColor="@color/colorAccent"
+                android:textSize="10sp" />
+
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/star2" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="SHOW ALL"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:textColor="#B5DAF1"/>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.percent.PercentRelativeLayout>

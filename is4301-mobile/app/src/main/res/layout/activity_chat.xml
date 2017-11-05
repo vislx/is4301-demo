@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zhixuan.zhang.is4301.ChatActivity">
+
+    <RelativeLayout
+        android:id="@+id/chat_r1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#3E785A">
+
+        <TextView
+            android:id="@+id/chat_first_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="ASK FINBOT A QUESTION"
+            android:textColor="#FFF"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/chat_r1_button1"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/chat_border_2"
+            android:text="Features"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="10sp" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_toLeftOf="@id/chat_r1_button1"
+            android:background="@drawable/chat_border"
+            android:text="Chat"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/chat_r1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/chat_chat_r1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/chat_chat_1_icon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:background="@drawable/u1" />
+
+            <TextView
+                android:id="@+id/chat_chat_1_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@id/chat_chat_1_icon"
+                android:text="FinBot"
+                android:textColor="#000"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/chat_chat_1_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="14dp"
+                android:layout_toRightOf="@id/chat_chat_1_name"
+                android:text="11:36 AM"
+                android:textColor="@color/colorAccent"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/chat_chat_1_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chat_chat_1_name"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/chat_chat_1_icon"
+                android:text="Hi Alice, what can I help you?"
+                android:textColor="#000"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chat_chat_r2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/chat_chat_2_icon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/u2" />
+
+            <TextView
+                android:id="@+id/chat_chat_2_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="12dp"
+                android:layout_toLeftOf="@id/chat_chat_2_icon"
+                android:text="Alice Tan"
+                android:textColor="#000"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/chat_chat_2_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="14dp"
+                android:layout_toLeftOf="@id/chat_chat_2_name"
+                android:text="11:37 AM"
+                android:textColor="@color/colorAccent"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/chat_chat_2_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chat_chat_2_name"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@id/chat_chat_2_icon"
+                android:text="Can help me check my account balance?"
+                android:textColor="#000"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chat_chat_r3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/chat_chat_3_icon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:background="@drawable/u1" />
+
+            <TextView
+                android:id="@+id/chat_chat_3_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@id/chat_chat_3_icon"
+                android:text="FinBot"
+                android:textColor="#000"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/chat_chat_3_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="14dp"
+                android:layout_toRightOf="@id/chat_chat_3_name"
+                android:text="11:40 AM"
+                android:textColor="@color/colorAccent"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/chat_chat_3_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chat_chat_3_name"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="68dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/chat_chat_3_icon"
+                android:text="Well, there are total $343,433 in your account. Saving account $32,983 and $310,405 Stock Value."
+                android:textColor="#000"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chat_chat_r4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/chat_chat_4_icon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/u2" />
+
+            <TextView
+                android:id="@+id/chat_chat_4_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="12dp"
+                android:layout_toLeftOf="@id/chat_chat_4_icon"
+                android:text="Alice Tan"
+                android:textColor="#000"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/chat_chat_4_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="14dp"
+                android:layout_toLeftOf="@id/chat_chat_4_name"
+                android:text="11:42 AM"
+                android:textColor="@color/colorAccent"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/chat_chat_4_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chat_chat_4_name"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@id/chat_chat_4_icon"
+                android:text="Okay, thank you"
+                android:textColor="#000"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chat_chat_r5"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/chat_chat_5_icon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:background="@drawable/u1" />
+
+            <TextView
+                android:id="@+id/chat_chat_5_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@id/chat_chat_5_icon"
+                android:text="FinBot"
+                android:textColor="#000"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/chat_chat_5_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="14dp"
+                android:layout_toRightOf="@id/chat_chat_5_name"
+                android:text="11:42 AM"
+                android:textColor="@color/colorAccent"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/chat_chat_5_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chat_chat_5_name"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="68dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/chat_chat_5_icon"
+                android:text="You are welcome!"
+                android:textColor="#000"
+                android:textSize="11sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/chat_r2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:paddingBottom="5dp">
+
+        <View
+            android:id="@+id/chat_plus_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@drawable/add" />
+
+        <View
+            android:id="@+id/chat_smile_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/emoji"
+            android:visibility="visible" />
+
+
+
+        <View
+            android:id="@+id/chat_voice_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_toLeftOf="@id/chat_smile_icon"
+            android:background="@drawable/voice"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/chat_send_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_toLeftOf="@id/chat_smile_icon"
+            android:background="@drawable/send"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/chat_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_toLeftOf="@id/chat_voice_icon"
+            android:layout_toRightOf="@id/chat_plus_icon"
+            android:background="@drawable/chat_edit_text"
+            android:padding="5dp"
+            android:inputType="text"
+            android:imeOptions="actionSend"/>
+    </RelativeLayout>
+</android.support.percent.PercentRelativeLayout>

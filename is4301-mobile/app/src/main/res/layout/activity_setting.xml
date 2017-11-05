@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context="zhixuan.zhang.is4301.SettingActivity">
+
+    <ImageView
+        android:id="@+id/setting_profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="25dp" />
+
+    <RelativeLayout
+        android:id="@+id/setting_r1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/setting_profile_image"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_edittext">
+
+        <View
+            android:id="@+id/setting_name_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@drawable/user" />
+
+        <EditText
+            android:id="@+id/setting_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/my_margin"
+            android:layout_marginRight="@dimen/my_margin"
+            android:layout_toRightOf="@id/setting_name_icon"
+            android:background="@android:color/transparent"
+            android:text="Alice Tan"
+            android:singleLine="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:textCursorDrawable="@color/colorAccent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_r2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/setting_r1"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/login_edittext">
+
+        <View
+            android:id="@+id/setting_role_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@drawable/line" />
+
+        <EditText
+            android:id="@+id/setting_role_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/my_margin"
+            android:layout_marginRight="@dimen/my_margin"
+            android:layout_toRightOf="@id/setting_role_icon"
+            android:background="@android:color/transparent"
+            android:text="Investor"
+            android:singleLine="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:textCursorDrawable="@color/colorAccent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_r3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/setting_r2"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/login_edittext">
+
+        <View
+            android:id="@+id/setting_email_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@drawable/email" />
+
+        <EditText
+            android:id="@+id/setting_email_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/my_margin"
+            android:layout_marginRight="@dimen/my_margin"
+            android:layout_toRightOf="@id/setting_email_icon"
+            android:background="@android:color/transparent"
+            android:text="alice.tan@fintech.com"
+            android:singleLine="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:textCursorDrawable="@color/colorAccent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_r4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/setting_r3"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/login_edittext">
+
+        <View
+            android:id="@+id/setting_password_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@drawable/lock" />
+
+        <EditText
+            android:id="@+id/setting_password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/my_margin"
+            android:layout_marginRight="@dimen/my_margin"
+            android:layout_toRightOf="@id/setting_password_icon"
+            android:background="@android:color/transparent"
+            android:text="password"
+            android:password="true"
+            android:singleLine="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:textCursorDrawable="@color/colorAccent" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/setting_email_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_r4"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="40dp"
+        android:text="EMAIL NOTIFICATION"
+        android:textColor="@color/colorAccent"
+        android:textSize="13sp" />
+
+    <RelativeLayout
+        android:id="@+id/setting_r5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_email_notification"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/setting_r5_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Monday"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:checked="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_r6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_r5"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/setting_r6_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Tuesday"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:checked="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_r7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_r6"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/setting_r7_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Wednesday"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:checked="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_r8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_r7"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/setting_r8_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Thursday"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:checked="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_r9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_r8"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/setting_r_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Friday"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            />
+    </RelativeLayout>
+</android.support.percent.PercentRelativeLayout>

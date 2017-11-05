@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zhixuan.zhang.is4301.NewsActivity">
+
+    <RelativeLayout
+        android:id="@+id/news_r1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <zhixuan.zhang.is4301.helper.LoopViewPager
+            android:id="@+id/news_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_above="@id/login_login_button" />
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/news_view_pager_indicators"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/news_r2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/news_r1"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/news_r2_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="5dp"
+            android:text="Banking"
+            android:textColor="#606171"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:id="@+id/news_r2_1"
+            android:layout_width="match_parent"
+            android:layout_height="152dp"
+            android:layout_below="@id/news_r2_heading"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/card_background1"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp" />
+
+                    <TextView
+                        android:id="@+id/card_text_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_below="@id/card_background1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Trump moves to scrap Obama rules on coal-fired power"
+                        android:textColor="#6B6AC3"
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:id="@+id/card_text_1_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_text_1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="CNBC"
+                        android:textColor="#5F8D61"
+                        android:textSize="7sp" />
+
+                    <TextView
+                        android:id="@+id/card_text_1_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_text_1"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/card_text_1_1"
+                        android:text="- 16 hours ago"
+                        android:textColor="#606171"
+                        android:textSize="7sp" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/card_background2"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp" />
+
+                    <TextView
+                        android:id="@+id/card_text_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_below="@id/card_background2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="North Korea hacked war blueprint, Seoul lawmaker says"
+                        android:textColor="#6B6AC3"
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:id="@+id/card_text_2_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_text_2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Financial Times"
+                        android:textColor="#5F8D61"
+                        android:textSize="7sp" />
+
+                    <TextView
+                        android:id="@+id/card_text_2_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_text_2"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/card_text_2_1"
+                        android:text="- 1 day ago"
+                        android:textColor="#606171"
+                        android:textSize="7sp" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/card_background3"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp" />
+
+                    <TextView
+                        android:id="@+id/card_text_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_below="@id/card_background3"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="IMF upbeat as global economy enjoys a growth spurt"
+                        android:textColor="#6B6AC3"
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:id="@+id/card_text_3_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_text_3"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="TechSpy.com"
+                        android:textColor="#5F8D61"
+                        android:textSize="7sp" />
+
+                    <TextView
+                        android:id="@+id/card_text_3_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_text_3"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/card_text_3_1"
+                        android:text="- 3 days ago"
+                        android:textColor="#606171"
+                        android:textSize="7sp" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/news_r2_tile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/news_r2_1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="5dp"
+            android:text="> More"
+            android:textColor="#606171"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/news_r3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/news_r2"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/news_r3_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="5dp"
+            android:text="Investments"
+            android:textColor="#606171"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:id="@+id/news_r3_1"
+            android:layout_width="match_parent"
+            android:layout_height="152dp"
+            android:layout_below="@id/news_r3_heading"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/card_background11"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp" />
+
+                    <TextView
+                        android:id="@+id/card_text_11"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_below="@id/card_background11"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Pfizer weighs sale of consumer health business"
+                        android:textColor="#6B6AC3"
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:id="@+id/card_text_11_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_text_11"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Pfizer Inc"
+                        android:textColor="#5F8D61"
+                        android:textSize="7sp" />
+
+                    <TextView
+                        android:id="@+id/card_text_11_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_text_11"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/card_text_11_1"
+                        android:text="- 2 hours ago"
+                        android:textColor="#606171"
+                        android:textSize="7sp" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/card_background22"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp" />
+
+                    <TextView
+                        android:id="@+id/card_text_22"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_below="@id/card_background22"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="India’s NSE chief seeks to ditch exchange’s ‘arrogant’ approach"
+                        android:textColor="#6B6AC3"
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:id="@+id/card_text_22_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_text_22"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="India Business"
+                        android:textColor="#5F8D61"
+                        android:textSize="7sp" />
+
+                    <TextView
+                        android:id="@+id/card_text_22_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_text_22"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/card_text_22_1"
+                        android:text="- 3 hours ago"
+                        android:textColor="#606171"
+                        android:textSize="7sp" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                card_view:cardCornerRadius="4dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/card_background33"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp" />
+
+                    <TextView
+                        android:id="@+id/card_text_33"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_below="@id/card_background33"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="JD.com launches luxury site targeting China’s mid-tier cities"
+                        android:textColor="#6B6AC3"
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:id="@+id/card_text_33_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_text_33"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Ecommerce"
+                        android:textColor="#5F8D61"
+                        android:textSize="7sp" />
+
+                    <TextView
+                        android:id="@+id/card_text_33_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card_text_33"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/card_text_33_1"
+                        android:text="- 5 hours ago"
+                        android:textColor="#606171"
+                        android:textSize="7sp" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/news_r3_tile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/news_r3_1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="5dp"
+            android:text="> More"
+            android:textColor="#606171"
+            android:textSize="10sp" />
+    </RelativeLayout>
+</android.support.percent.PercentRelativeLayout>
